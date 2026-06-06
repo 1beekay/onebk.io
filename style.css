@@ -286,6 +286,54 @@ main a {
   box-shadow: var(--card-shadow);
 }
 
+/* Playbook cards */
+
+.playbooks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 560px) {
+  .playbooks {
+    grid-template-columns: 1fr;
+  }
+}
+
+.playbook {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  padding: 20px 22px 8px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s ease;
+}
+
+.playbook:hover {
+  border-color: var(--accent);
+}
+
+.playbook h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.playbook h3::after {
+  content: " \2192";
+}
+
+.playbook p {
+  font-size: 0.93rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 /* Contact form */
 
 form {
