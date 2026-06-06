@@ -101,21 +101,6 @@ body::before {
   margin-top: 12px;
 }
 
-.hero .open-to {
-  margin-top: 26px;
-  display: inline-block;
-  background: linear-gradient(90deg, rgba(37, 99, 235, 0.18), rgba(124, 58, 237, 0.18));
-  border: 1px solid rgba(138, 180, 255, 0.35);
-  border-radius: 10px;
-  padding: 10px 16px;
-  font-size: 0.95rem;
-}
-
-.hero .open-to a {
-  color: var(--hero-text);
-  font-weight: 600;
-}
-
 .links {
   margin-top: 32px;
   display: flex;
@@ -137,53 +122,6 @@ body::before {
 .links a:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.5);
-}
-
-/* Stats band */
-
-.stats {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent), #0b101c;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
-  padding: 30px 0;
-}
-
-.stats-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-number {
-  font-family: "Space Grotesk", "Inter", sans-serif;
-  font-size: 1.85rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  background: linear-gradient(90deg, #8ab4ff, #c4b5fd);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
-
-.stat-label {
-  font-size: 0.8rem;
-  color: #97a3b6;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
-@media (max-width: 560px) {
-  .stats-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-  }
 }
 
 /* Sections */
@@ -263,6 +201,22 @@ main a {
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 8px;
+}
+
+/* How I operate */
+
+.principles {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.principles li {
+  margin-bottom: 14px;
+}
+
+.principles strong {
+  color: var(--text);
 }
 
 /* Focus area chips */
@@ -418,22 +372,18 @@ footer a {
     display: none;
   }
 
-  .hero,
-  .stats {
+  .hero {
     background: #fff;
     color: #000;
   }
 
-  .hero .tagline,
-  .stat-number {
+  .hero .tagline {
     background: none;
     -webkit-text-fill-color: #000;
     color: #000;
   }
 
-  .hero .subline,
-  .hero .location,
-  .stat-label {
+  .hero .subline {
     color: #333;
   }
 
@@ -442,7 +392,6 @@ footer a {
     border-color: #999;
   }
 
-  .open-to,
   form {
     display: none;
   }
