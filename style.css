@@ -266,11 +266,6 @@ main a {
   color: var(--text);
 }
 
-.perma {
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
 /* Focus area chips */
 
 .chips {
