@@ -101,6 +101,25 @@ body::before {
   margin-top: 12px;
 }
 
+.hero.compact {
+  padding: 64px 0 56px;
+}
+
+.crumb {
+  margin-bottom: 14px;
+}
+
+.crumb a {
+  color: var(--hero-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.crumb a:hover {
+  color: var(--hero-text);
+}
+
 .links {
   margin-top: 32px;
   display: flex;
@@ -217,6 +236,11 @@ main a {
 
 .principles strong {
   color: var(--text);
+}
+
+.perma {
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 /* Focus area chips */
