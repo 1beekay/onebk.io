@@ -227,14 +227,42 @@ main a {
 .principles {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
   margin-bottom: 16px;
 }
 
+@media (max-width: 560px) {
+  .principles {
+    grid-template-columns: 1fr;
+  }
+}
+
 .principles li {
-  margin-bottom: 14px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid transparent;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  padding: 20px 22px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+  transition: border-left-color 0.15s ease;
+}
+
+.principles li:hover {
+  border-left-color: var(--accent-2);
 }
 
 .principles strong {
+  display: block;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
   color: var(--text);
 }
 
